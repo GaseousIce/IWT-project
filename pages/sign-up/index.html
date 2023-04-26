@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IWT Sign up</title>
     <link rel="shortcut icon" href="https://flowbite.com/docs/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -95,14 +96,14 @@
                     <form class="space-y-4 md:space-y-6" action="#">
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
-                                <input type="email" name="email" id="email"
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                                <input type="name" name="name" id="name"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Adam Johnson" required="">
                             </div>
                             <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your ID</label>
-                                <input type="email" name="email" id="email"
+                                <label for="ID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your ID</label>
+                                <input type="ID" name="ID" id="ID"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="123456789" required="">
                             </div>
@@ -128,6 +129,33 @@
                                     placeholder="••••••••"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required="">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="age"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Age</label>
+                                <input type="number" name="age" id="age" placeholder="21"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    required="">
+                            </div>
+                            <div>
+                                <label for="branch"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
+                                <select name="branch" id="branch" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option disabled selected hidden ">Choose your branch</option>
+                                    <option value="AeE">Aerospace Engineering</option>
+                                    <option value="AE">Automobile Engineering</option>
+                                    <option value="CE">Civil Engineering</option>
+                                    <option value="CorE">Corrosion Engineering</option>
+                                    <option value="CSE">Comptuer Science & Engineering</option>
+                                    <option value="EEC">Electrical & Electronics Engineering</option>
+                                    <option value="ETC">Electronics & Telecommunications Engineering</option>
+                                    <option value="ME">Materials Engineering</option>
+                                    <option value="MEE">Mechanical Engineering</option>
+                                    <option value="PE">Process Engineering</option>
+                                </select>
                             </div>
                         </div>
 
