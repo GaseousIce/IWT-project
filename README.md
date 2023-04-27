@@ -1,4 +1,4 @@
-# IWT project
+# e-Exam portal project
 
 <!-- [About project](#about-project) -->
 
